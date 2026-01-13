@@ -2,6 +2,20 @@ body {
   background: #2A7B9B;
   background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 100%);
 }
+.header {
+  border: 1px black solid;
+  display: inline-block;
+  background-color: aliceblue;
+  padding: 10px;
+}
+p {
+  max-height: 200px;
+  max-width: 450px;
+  border: 2px #020024 dotted;
+  background-color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .menu-bar {
   background: #020024;
