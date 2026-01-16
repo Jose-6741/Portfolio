@@ -2,6 +2,15 @@ body {
   background: #EEAECA;
 background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
+
+.header {
+  border: 2px black solid;
+  display: inline-block;
+  background-color: aliceblue;
+  padding: 10px;
+  font-size: 60px;
+}
+
 p {
   max-height: 200px;
   max-width: 600px;
@@ -10,6 +19,7 @@ p {
   font-size: 35px;
   font-weight: bold;
 }
+
 .menu-bar {
   background: #020024;
   background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -27,20 +37,20 @@ p {
   padding: 14px 20px;
 }
 
-.item.title {
+.item {
   font-weight: 600;
 }
 
 .item:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-a {
+.item {
   text-decoration: none;
   position: relative;
   z-index: 1;
 }
 
-a::before {
+.item::before {
   content: "";
   background-color: lightslategray;
   position: absolute;
@@ -52,18 +62,20 @@ a::before {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover::before {
+.item:hover::before {
   bottom: 0;
   height: 100%;
   z-index: -1;
 }
-a.work {
+.work {
   text-decoration: none;
   position: relative;
+  font-size: 45px;
+  color: black;
 }
 
-a.work::before,
-a.work::after {
+.work::before,
+.work::after {
   content: "";
   position: absolute;
   display: block;
@@ -73,23 +85,23 @@ a.work::after {
   transition: all 0.3s ease;
 }
 
-a.work::after {
+.work::after {
   top: 0;
   left: 0;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
 }
 
-a.work::before {
+.work::before {
   right: 0;
   bottom: 0;
   border-bottom: 2px solid transparent;
   border-right: 2px solid transparent;
 }
 
-a.work:hover::before,
-a.work:hover::after {
-  width: 10px;
-  height: 10px;
-  border-color: #A6A6A6;
+.work:hover::before,
+.work:hover::after {
+  width: 15px;
+  height: 15px;
+  border-color: #001;
 }

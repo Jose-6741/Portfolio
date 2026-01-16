@@ -3,7 +3,7 @@ body {
   background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 100%);
 }
 .header {
-  border: 1px black solid;
+  border: 2px black solid;
   display: inline-block;
   background-color: aliceblue;
   padding: 10px;
