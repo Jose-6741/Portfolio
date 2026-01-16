@@ -7,14 +7,16 @@ body {
   display: inline-block;
   background-color: aliceblue;
   padding: 10px;
+  font-size: 150px;
 }
-p {
-  max-height: 200px;
-  max-width: 450px;
-  border: 2px #020024 dotted;
-  background-color: aliceblue;
-  font-size: 20px;
-  font-weight: bold;
+
+img {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  height: 265px;
+  width: 265px;
+  border: 2px black solid;
 }
 
 .menu-bar {
